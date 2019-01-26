@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @*On the site template, change both the page title and the main application link in the navbar to say "COMP2084 - Lab 2"*@
+    <title>@ViewBag.Title - COMP2084 - Lab 2</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -16,7 +17,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @*On the site template, change both the page title and the main application link in the navbar to say "COMP2084 - Lab 2"*@
+                @Html.ActionLink("COMP2084 - Lab 2", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -31,7 +33,8 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            @*Also on the template, include your full name and student number in the footer*@
+            <p>&copy; @DateTime.Now.Year - Dante Coelho Cerqueira Santos - 200389752</p>
         </footer>
     </div>
 
